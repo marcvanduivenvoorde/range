@@ -1,0 +1,20 @@
+{
+    "name": "marcvanduivenvoorde/range",
+    "description": "Range iterator object",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "marcvanduivenvoorde",
+            "email": "marcvanduivenvoorde@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "\\MarcVanDuivenvoorde\\Range\\": "src/Range"
+        }
+    },
+    "require": {
+        "php": ">=7"
+    }
+}
