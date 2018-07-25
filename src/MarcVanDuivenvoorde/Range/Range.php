@@ -61,4 +61,17 @@ class Range implements Iterator {
     return $this->range;
   }
 
+  /**
+   * Is the number available in the range.
+   *
+   * @param int $number
+   *   The number to match.
+   *
+   * @return bool
+   *   The number is available in the range.
+   */
+  public function isInRange(int $number) {
+    return in_array($number, $this->range);
+  }
+
 }
