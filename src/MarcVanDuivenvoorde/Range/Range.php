@@ -99,12 +99,8 @@ class Range implements Iterator
      */
     public function isWithinRange(int $number)
     {
-        $keys = array_keys($this->range);
-
-        $first = reset($keys);
-        $last = end($keys);
-        $start = min($this->range[$first], $this->range[$last]);
-        $end = max($this->range[$first], $this->range[$last]);
+        $start = min($this->range);
+        $end = max($this->range);
 
         if ($number < $start) {
             return false;
